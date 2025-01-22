@@ -1,7 +1,5 @@
-#!/usr/bin/env python3
-
+import os
 from flask import Flask, jsonify, abort
-
 from manifest import MANIFEST
 from catalog_response import catalog_response, get_available_saga_names
 
