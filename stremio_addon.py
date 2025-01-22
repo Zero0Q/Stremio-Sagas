@@ -2,6 +2,7 @@ import os
 from flask import Flask, jsonify, abort
 from manifest import MANIFEST
 from catalog_response import catalog_response, get_available_saga_names
+from sagas import SAGAS
 
 app = Flask(__name__)
 
