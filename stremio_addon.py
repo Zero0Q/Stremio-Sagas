@@ -22,7 +22,7 @@ def addon_catalog(media_type, saga_param):
         abort(404)
     saga_name = saga_param.split("=")[-1]
     if saga_name == "Saga Name":
-        saga_name = list(SAGAS.keys())[0]  # Default to the first saga if none is provided
+        saga_name = list(SAGAS.keys())[0]  # Default to the first saga in the list if none is provided
     return respond_with(catalog_response(media_type, saga_name))
 
 def set_manifest_sagas_from_available_sagas(manifest):
